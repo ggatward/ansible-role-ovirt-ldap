@@ -1,7 +1,7 @@
 ---
 - when: ovirt_engine_ldap_setup is defined
   block:
-  - name: Check pckg is installed
+  - name: Install oVirt aaa-ldap package
     package:
       name: ovirt-engine-extension-aaa-ldap-setup
       state: present
